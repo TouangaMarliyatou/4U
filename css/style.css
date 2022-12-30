@@ -1,0 +1,247 @@
+*{
+    margin:0; padding:0;
+    border:none;
+}
+body{
+    background:#1B181F;
+}
+.container{
+    height: 75vh;
+    position:relative;
+    max-width: 900px;
+    margin:0 auto;
+    background: url("../img/femme.png") no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+.gradient{
+    width: 100%; height: 100%;
+    position:absolute;
+    background: linear-gradient(rgba(0,0,0,0),#1B181F 70%);
+}
+.container h1{
+    color: white;
+}
+.container .text{
+    font-size: 30px; 
+    top:30vh;
+    position: relative;
+    text-align: center;
+}
+.container .text p{
+    line-height: 30px;
+    color: #cccc;
+}
+.buttons{
+    position: relative;
+    margin: 0 auto;
+    border-radius: 12px;
+    width: 220px;
+    height: 50px;
+    background: white;
+    display: flex;
+    top:40vh;
+}
+.buttons a{
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    line-height: 250%;
+}
+.register-button{
+    border-radius: 12px;
+    background-color: #DA4E21;
+    width: 60%;
+    color: white;
+}
+.signIn-button{
+    border-bottom-right-radius: 12px;
+    border-top-right-radius:12px;
+    width: 50%;
+    color:black
+}
+header{
+    position: relative;
+    padding: 30px;
+}
+.logo p{
+    font-size: 30px;
+}
+/*****************************************sign In and register*************************************/
+.register, .signIn{
+    height:100vh !important;
+}
+.layer{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background: black;
+    opacity: 0.5;
+}
+.signIn-form, .register-form{
+    position: absolute;
+    bottom:0;
+    width: 100%; height: 60%;
+    background-color: #1B181F;
+    color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius:30px;
+    padding-top: 15px;
+}
+form{
+    display:flex;
+    flex-direction: column;
+}
+.signIn-form label, .register-form label{
+    display: block;
+    width: 80%;
+    font-size: 22px;
+    margin:0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.signIn-form input, .register-form input{
+    width: 85%; height:55px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: #2F2938;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.signIn-form input:hover{
+    border: 2px solid green;
+    background-color: #8E849B;
+}
+input[type=submit]{
+    background: #DA4E21;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+.signIn p, .register p{
+    text-align: center;
+    font-size: 20px;
+}
+.welcome {
+    position:relative;
+    z-index: 1;
+    font-size: 30px !important;
+    color: white;
+}
+.signIn .logo, .register .logo{
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    width: 100px; height:100px;
+    top: 20px;
+    background: green;
+    border-radius: 50%;
+    margin:0 auto;
+    margin-bottom: 30px;
+    line-height: 100px;
+    color:White;
+    font-size: 35px;
+}
+/*********************************************************register*******************************************/
+.register .layer{
+    opacity: 0.7;
+}
+.register form{
+    margin-top: 180px;
+}
+.register-form{
+    height: 100% !important;
+    border-radius: inherit;
+    background: rgba(0,0,0,0.6);
+}
+.register-form input{
+    height: 35px;
+}
+
+/******************************************************profile********************************************/
+.profile-contain{
+    background-color: #070707;
+    padding: 5%;
+}
+.profile-contain i{
+    display: block;
+    position: absolute;
+    color: #DA4E21;
+    font-size: 30px;
+    width: 36px;
+    height: 35px;
+}
+.pic{
+    position: relative;
+    border:3px dashed #DA4E21;
+    margin: 0 auto;
+    border-radius: 50%;
+    width:140px;
+    height:140px;
+    text-align: center;
+}
+.profile img{
+    position: relative;
+    width:90%;
+    height:90%;
+    object-fit:cover;
+    border-radius:50%;
+    margin: 0 auto;
+    top:50%;
+    transform:translateY(-50%);
+}
+.description{
+    text-align: center;
+    color:white;
+    font-size: 18px;
+    margin-top: 15px;
+}
+.description p{
+    margin:8px 3px;
+}
+.description span{
+    color:#9F9D9D;
+}
+.profile-contain h2{
+    color: green;
+    font-size: 15px;
+    text-align: center;
+    margin:30px 0 18px 0;
+}
+
+.competences{
+    background: #1A1919;
+    border-radius: 20px;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    
+}
+.competences div{
+    width: 45%; height: 40px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    margin: 5px 0 5px 0;
+}
+.profile-contain .modify{
+    position: relative;
+    display: block;
+    width: 80%;
+    height: 53px;
+    line-height: 53px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: #DA4E21; color:white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 20px;
+}
